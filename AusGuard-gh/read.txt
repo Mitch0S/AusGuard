@@ -1,0 +1,42 @@
+####################################################################################
+This documentation was written by Mitch0S, (Mitch N) on the 1st of March, 2021.
+####################################################################################
+
+
+###############################
+#     API SERVER/DATABASE     #
+###############################
+Setup:
+    1. Install dependencies
+    2. cd into dir
+    3. Use client code in /API-SERVER/CLIENT to create entries in the database.
+
+
+###############################################
+#     GUARDIAN / LOAD BALANCER CONTROLLER     #
+###############################################
+
+About:
+    AusGuard.net uses/used a DNS load balancer, this basically works by having multiple "A" records.
+    The way this works, is when a player connects to the servers domain, it forwards to
+    "au.ipv4.perth.ausguard.net" for example. There are multiple A records with this subdomain attached
+    to is, to the client selects a random one, and joins it. The proxy then uses the hostname originally
+    joined to proxy the player accordingly.
+
+Why this was used:
+    I used this method of load balancing due to bandwidth limitations of my hosting provider.
+
+Setup:
+    1. Install dependencies
+    2. Enter your cloudflare API keys and Auth credidentials into their variables
+    3. Add hosts to hosts.txt, with "offline" as a default status (123.123.123.123, offline)
+    4. Run guardian.py and test that the program is adding/removing proxies to the load balancer.
+
+################################################################################################################
+################################################################################################################
+
+Please note, that this code was written by a grade 10 student, so the code does work, it may just not be as
+it could have been.
+
+################################################################################################################
+################################################################################################################
