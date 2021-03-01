@@ -35,8 +35,8 @@ Setup:
 ################################################################################################################
 ################################################################################################################
 
-Please note, that this code was written by a grade 10 student, so the code does work, it may just not be as
-it could have been.
+Please note, that this code was written by a grade 10 student as a proof of concept, so the code does work, although it may just not be as
+efficient as it could have been.
 
 ################################################################################################################
 ################################################################################################################
